@@ -3,11 +3,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 import { authUtils } from './utils/auth'
 
 // Use absolute paths from src directory
-import Landing from '/src/pages/Landing.vue'
-import Login from '/src/pages/Login.vue'
-import Signup from '/src/pages/Signup.vue'
-import Dashboard from '/src/pages/Dashboard.vue'
-import Tickets from '/src/pages/Tickets.vue'
+import Landing from '@/pages/Landing.vue'
+import Login from '@/pages/Login.vue'
+import Signup from '@/pages/Login.vue'
+import Dashboard from '@/pages/Dashboard.vue'
+import Tickets from '@/pages/Tickets.vue'
 
 const routes = [
   {
