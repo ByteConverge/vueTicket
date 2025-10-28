@@ -4,10 +4,10 @@ import { authUtils } from './utils/auth'
 
 // Comment out or remove Landing.vue import for now
 // import Landing from './pages/Landing.vue'
-import Login from './pages/Login.vue'
-import Signup from './pages/Signup.vue'
-import Dashboard from './pages/Dashboard.vue'
-import Tickets from './pages/Tickets.vue'
+import Login from '../pages/Login.vue'
+import Signup from '../pages/Signup.vue'
+import Dashboard from '../pages/Dashboard.vue'
+import Tickets from '../pages/Tickets.vue'
 
 const routes = [
   {
