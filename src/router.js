@@ -2,34 +2,41 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { authUtils } from './utils/auth'
 
+// Import all components directly
+import Landing from './pages/Landing.vue'
+import Login from './pages/Login.vue'
+import Signup from './pages/Signup.vue'
+import Dashboard from './pages/Dashboard.vue'
+import Tickets from './pages/Tickets.vue'
+
 const routes = [
   {
     path: '/',
     name: 'Landing',
-    component: () => import('./pages/Landing.vue')
+    component: Landing
   },
   {
     path: '/login',
     name: 'Login',
-    component: () => import('./pages/Login.vue'),
+    component: Login,
     meta: { requiresGuest: true }
   },
   {
     path: '/signup',
     name: 'Signup',
-    component: () => import('./pages/Signup.vue'),
+    component: Signup,
     meta: { requiresGuest: true }
   },
   {
     path: '/dashboard',
     name: 'Dashboard',
-    component: () => import('./pages/Dashboard.vue'),
+    component: Dashboard,
     meta: { requiresAuth: true }
   },
   {
     path: '/tickets',
     name: 'Tickets',
-    component: () => import('./pages/Tickets.vue'),
+    component: Tickets,
     meta: { requiresAuth: true }
   }
 ]
