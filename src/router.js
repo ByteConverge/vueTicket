@@ -2,12 +2,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { authUtils } from './utils/auth'
 
-// Import all components directly
-import Landing from './pages/Landing.vue'
-import Login from './pages/Login.vue'
-import Signup from './pages/Signup.vue'
-import Dashboard from './pages/Dashboard.vue'
-import Tickets from './pages/Tickets.vue'
+// Use absolute paths from src directory
+import Landing from '/src/pages/Landing.vue'
+import Login from '/src/pages/Login.vue'
+import Signup from '/src/pages/Signup.vue'
+import Dashboard from '/src/pages/Dashboard.vue'
+import Tickets from '/src/pages/Tickets.vue'
 
 const routes = [
   {
@@ -46,7 +46,6 @@ const router = createRouter({
   routes
 })
 
-// Navigation guards
 router.beforeEach((to, from, next) => {
   const isAuthenticated = authUtils.isAuthenticated()
   
